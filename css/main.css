@@ -19,6 +19,7 @@ body {
     align-items: center;
     justify-content: space-between;
     font-size: 20px;
+    /* width: 100vw; */
 }
 
 .header_logo {
@@ -46,7 +47,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     height: 761px;
-    width: 100vw;
+    max-width: 100%;
 }
 
 .intro_title {
@@ -128,15 +129,15 @@ body {
 
 .block:first-child {
     padding-right: 40px;
-    width: 100vw;
-    flex-shrink: 1;
+    /* width: 100vw; */
+    flex-grow: 1;
     text-align: right;
 }
 
 .block:last-child {
     padding-left: 40px;
-    width: 100vw;
-    flex-shrink: 1;
+    /* width: 100vw; */
+    flex-grow: 1;
     text-align: left;
 }
 
@@ -282,10 +283,13 @@ body {
 .album_images_6 {
     height: 406px;
 }
+
+.elephants img {
+    width: 100%;
+}
+
  .elephants_picture {
     margin-top: 80px;
-    height: 100%;
-    width: 100vw;
  }
 
  .elephants_descripton {
