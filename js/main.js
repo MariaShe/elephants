@@ -12,3 +12,11 @@ $(window).resize(function() {
         });        
     }
 })
+
+//Smooth navigation on page
+$(document).on('click', '.header_list li a', function() {
+    var linkID = $(this).attr('href');
+    $('html, body').animate({ 
+      scrollTop: $(linkID).offset().top 
+    }, 'slow');
+  });
